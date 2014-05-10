@@ -14,15 +14,15 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/lge/ls980/ls980-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/lgl22/lgl22-vendor.mk)
 $(call inherit-product, device/lge/g2-common/g2.mk)
 
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cdma.home.operator.numeric=310120 \
-    ro.cdma.home.operator.alpha=Sprint \
+    ro.cdma.home.operator.numeric=310012 \
+    ro.cdma.home.operator.alpha=KDDI \
     telephony.lteOnCdmaDevice=1 \
     telephony.lte.cdma.device=1 \
     ro.telephony.default_network=8 \
